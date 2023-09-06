@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paises</title>
+</head>
+<body>
+    <h1>Estrangeiro ou Brasileiro</h1>
+    <p>Digite o pais desejado.&#128511;</p>
+    <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Verificar" id="verificar">
+    <div id="resultado">
+        
+    </div>
+    <script>
+        var verificar = document.querySelector('input#verificar')
+        verificar.addEventListener('click',pave)
+
+        function pave() {
+            var pais = document.querySelector('input#txtpais').value
+            var res = document.querySelector('div#resultado')
+            
+            if (pais.toLowerCase() == 'brasil') {
+                res.innerHTML = `<p>Vivendo em ${pais}, você é brasileiro. 🥵</p>`
+            } else {
+                res.innerHTML = `<p>Vivendo em ${pais}, você é estrangeiro. &#x1f976;</p>`
+            }
+        }
+    </script>
+</body>
+</html>
