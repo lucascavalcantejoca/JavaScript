@@ -1,9 +1,7 @@
-var hr = new Date()
-var min = new Date()
-var sec = new Date()
-var horas = hr.getHours()
-var minutos = min.getMinutes()
-var segundos = sec.getSeconds()
+var agora = new Date()
+var horas = agora.getHours()
+var minutos = agora.getMinutes()
+var segundos = agora.getSeconds()
 
 
 console.log(`Agora são exatamente ${horas}:${minutos}:${segundos}.`)
